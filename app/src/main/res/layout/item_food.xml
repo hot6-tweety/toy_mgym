@@ -1,150 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:elevation="4dp"
-    app:cardCornerRadius="12dp"
-    app:contentPadding="8dp"
-    tools:cardBackgroundColor="#81C784"
-    tools:layout_editor_absoluteX="1dp"
-    tools:layout_editor_absoluteY="1dp">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="food"
+            type="com.toy.mgym.model.FoodInfo" />
+    </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_food"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:id="@+id/tv_food_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:maxLines="1"
-            android:padding="4dp"
-            android:text="식품이름"
-            android:textStyle="bold"
-            android:textSize="24dp"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="12dp"
+        app:contentPadding="8dp"
+        tools:cardBackgroundColor="#81C784"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
 
-        <TextView
-            android:id="@+id/tv_food_servingSize"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:padding="4dp"
-            android:text="1회 제공량"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_food_name"
-            app:layout_constraintStart_toBottomOf="@id/tv_food_name"
-            app:layout_constraintStart_toEndOf="@+id/tv_food_name"
-            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/tv_food_calorie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:padding="2dp"
-            android:layout_marginStart="16dp"
-            android:text="TextView"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_food_name"
-            tools:text="열량(kcal)" />
-
-        <TextView
-            android:id="@+id/tv_food_carbohydrate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            app:layout_constraintBottom_toBottomOf="@+id/tv_food_calorie"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/tv_food_calorie"
-            tools:text="탄수화물(g)" />
-
-        <TextView
-            android:id="@+id/tv_food_protein"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="단백질(g)"
-            app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
-            app:layout_constraintTop_toBottomOf="@+id/tv_food_calorie" />
-
-        <TextView
-            android:id="@+id/tv_food_fat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="지방(g)"
-            app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
-            app:layout_constraintTop_toBottomOf="@id/tv_food_protein"
-            tools:layout_editor_absoluteY="78dp" />
-
-        <TextView
-            android:id="@+id/tv_food_sugars"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="당류(g)"
-            app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
-            app:layout_constraintTop_toBottomOf="@id/tv_food_fat"
-            tools:layout_editor_absoluteY="97dp" />
-
-        <TextView
-            android:id="@+id/tv_food_sodium"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="나트륨(g)"
-            app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
-            app:layout_constraintTop_toBottomOf="@id/tv_food_sugars"
-            tools:layout_editor_absoluteY="116dp" />
-
-        <TextView
-            android:id="@+id/tv_food_cholesterol"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="콜레스테롤(mg)"
-            app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
-            app:layout_constraintTop_toBottomOf="@+id/tv_food_carbohydrate" />
-
-        <TextView
-            android:id="@+id/tv_food_saturatedFattyAcids"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="포화지방산(g)"
-            app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
-            app:layout_constraintTop_toBottomOf="@id/tv_food_cholesterol"
-            tools:layout_editor_absoluteY="116dp" />
-
-        <TextView
-            android:id="@+id/tv_food_transFattyAcids"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-
-            android:text="트랜스지방산(g)"
-            app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
-            app:layout_constraintTop_toBottomOf="@id/tv_food_saturatedFattyAcids"
-            tools:layout_editor_absoluteY="116dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="2dp"
-            android:text="가공업체"
-            android:textSize="11dp"
-            app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
-            app:layout_constraintTop_toBottomOf="@id/tv_food_transFattyAcids"
-            />
+            <TextView
+                android:id="@+id/tv_food_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:padding="4dp"
+                android:text="@{food.name}"
+                tools:text="식품이름"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tv_food_servingSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@{food.servingSize}"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_food_name"
+                app:layout_constraintStart_toEndOf="@+id/tv_food_name"
+                tools:text="1회 제공량" />
 
-</androidx.cardview.widget.CardView>
+            <TextView
+                android:id="@+id/tv_food_calorie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:padding="2dp"
+                android:text="@{food.calorie}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_food_name"
+                tools:text="열량(kcal)" />
+
+            <TextView
+                android:id="@+id/tv_food_carbohydrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_food_calorie"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/tv_food_calorie"
+                android:text="@{food.carbohydrate}"
+                tools:text="탄수화물(g)" />
+
+            <TextView
+                android:id="@+id/tv_food_protein"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.protein}"
+                tools:text="단백질(g)"
+                app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
+                app:layout_constraintTop_toBottomOf="@+id/tv_food_calorie" />
+
+            <TextView
+                android:id="@+id/tv_food_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.fat}"
+                tools:text="지방(g)"
+                app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
+                app:layout_constraintTop_toBottomOf="@id/tv_food_protein"
+                tools:layout_editor_absoluteY="78dp" />
+
+            <TextView
+                android:id="@+id/tv_food_sugars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.sugars}"
+                tools:text="당류(g)"
+                app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
+                app:layout_constraintTop_toBottomOf="@id/tv_food_fat"
+                tools:layout_editor_absoluteY="97dp" />
+
+            <TextView
+                android:id="@+id/tv_food_sodium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.sodium}"
+                tools:text="나트륨(g)"
+                app:layout_constraintStart_toStartOf="@id/tv_food_calorie"
+                app:layout_constraintTop_toBottomOf="@id/tv_food_sugars"
+                tools:layout_editor_absoluteY="116dp" />
+
+            <TextView
+                android:id="@+id/tv_food_cholesterol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.cholesterol}"
+                tools:text="콜레스테롤(mg)"
+                app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
+                app:layout_constraintTop_toBottomOf="@+id/tv_food_carbohydrate" />
+
+            <TextView
+                android:id="@+id/tv_food_saturatedFattyAcids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.saturatedFattyAcids}"
+                tools:text="포화지방산(g)"
+                app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
+                app:layout_constraintTop_toBottomOf="@id/tv_food_cholesterol"
+                tools:layout_editor_absoluteY="116dp" />
+
+            <TextView
+                android:id="@+id/tv_food_transFattyAcids"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.transFattyAcids}"
+                tools:text="트랜스지방산(g)"
+                app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
+                app:layout_constraintTop_toBottomOf="@id/tv_food_saturatedFattyAcids"
+                tools:layout_editor_absoluteY="116dp" />
+
+            <TextView
+                android:id="@+id/tv_food_animal_plant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:text="@{food.animalPlant}"
+                tools:text="가공업체"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@id/tv_food_carbohydrate"
+                app:layout_constraintTop_toBottomOf="@id/tv_food_transFattyAcids" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

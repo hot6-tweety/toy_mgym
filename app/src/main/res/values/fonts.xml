@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+  <style name="Title1">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">48sp</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <style name="Title2">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">32sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="Title3">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">24sp</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <style name="LargeNormalBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <style name="LargeNoneBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="LargeTightBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="LargeNormalMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <style name="LargeNoneMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="LargeTightMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="LargeNormalRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <style name="LargeNoneRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="LargeTightRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">18sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="RegularTightBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="RegularNormalBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <style name="RegularNoneBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="RegularTightMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="RegularNormalMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <style name="RegularNoneMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="RegularTightRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="RegularNormalRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">8sp</item>
+  </style>
+
+  <style name="RegularNoneRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="SmallTightBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="SmallNormalBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <style name="SmallNoneBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="SmallTightMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="SmallNormalMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <style name="SmallNoneMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="SmallTightRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="SmallNormalRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">6sp</item>
+  </style>
+
+  <style name="SmallNoneRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="TinyTightBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="TinyNormalBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="TinyNoneBold">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="TinyNormalMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="TinyNoneMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="TinyTightMedium">
+    <item name="android:fontFamily">@font/font_inter_medium</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="TinyNormalRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">4sp</item>
+  </style>
+
+  <style name="TinyNoneRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">0sp</item>
+  </style>
+
+  <style name="TinyTightRegular">
+    <item name="android:fontFamily">@font/font_jua</item>
+    <item name="android:textStyle">normal</item>
+    <item name="android:textSize">12sp</item>
+    <item name="android:lineSpacingExtra">2sp</item>
+  </style>
+
+  <style name="AndroidCaptionBold">
+    <item name="android:fontFamily">sans-serif</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textSize">10sp</item>
+  </style>
+</resources>

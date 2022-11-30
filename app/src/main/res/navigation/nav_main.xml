@@ -2,24 +2,25 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    android:id="@+id/main_nav"
+    android:label="@string/title_search"
+    app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/nav_home"
         android:name="com.toy.mgym.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/nav_dashboard"
         android:name="com.toy.mgym.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/nav_search"
         android:name="com.toy.mgym.ui.search.SearchFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/title_search"
         tools:layout="@layout/fragment_search" />
 </navigation>
