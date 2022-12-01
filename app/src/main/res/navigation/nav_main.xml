@@ -3,7 +3,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav"
-    android:label="@string/title_search"
     app:startDestination="@+id/nav_home">
 
     <fragment
@@ -22,5 +21,14 @@
         android:id="@+id/nav_search"
         android:name="com.toy.mgym.ui.search.SearchFragment"
         android:label="@string/title_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_search_to_search_food"
+            app:destination="@id/nav_search_food" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_search_food"
+        android:name="com.toy.mgym.ui.search.food.SearchFoodFragment"
+        android:label="SearchFoodFragment"
+        tools:layout="@layout/fragment_search_food"/>
 </navigation>

@@ -4,7 +4,7 @@ package com.toy.mgym.model
 import com.google.gson.annotations.SerializedName
 
 data class FoodData(
-  @SerializedName("items")
+    @SerializedName("items")
     val items: List<FoodInfo>,
     @SerializedName("numOfRows")
     val numOfRows: Int,
