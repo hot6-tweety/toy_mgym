@@ -37,8 +37,8 @@
     <color name="yellow_light">#ffc462</color>
     <color name="yellow_lighter">#ffd188</color>
     <color name="yellow_lightest">#ffefd7</color>
-    <color name="3_rd_party_facebook_base">#0078ff</color>
-    <color name="3_rd_party_facebook_dark">#0067db</color>
-    <color name="3_rd_party_twitter_base">#1da1f2</color>
-    <color name="3_rd_party_twitter_dark">#0c90e1</color>
+    <color name="facebook_base">#0078ff</color>
+    <color name="facebook_dark">#0067db</color>
+    <color name="twitter_base">#1da1f2</color>
+    <color name="twitter_dark">#0c90e1</color>
 </resources>

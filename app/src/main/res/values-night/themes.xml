@@ -2,15 +2,15 @@
     <!-- Base application theme. -->
     <style name="Theme.Mgym" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/blue_darkest</item>
+        <item name="colorPrimaryVariant">@color/blue_base</item>
+        <item name="colorOnPrimary">@color/sky_white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/primary_dark</item>
+        <item name="colorSecondaryVariant">@color/primary_base</item>
+        <item name="colorOnSecondary">@color/ink_darkest</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">@color/sky_white</item>
         <!-- Customize your theme here. -->
     </style>
 </resources>

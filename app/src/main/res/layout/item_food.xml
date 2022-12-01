@@ -5,6 +5,9 @@
 
     <data>
         <variable
+            name="viewModel"
+            type="com.toy.mgym.ui.search.SearchViewModel" />
+        <variable
             name="food"
             type="com.toy.mgym.model.FoodInfo" />
     </data>

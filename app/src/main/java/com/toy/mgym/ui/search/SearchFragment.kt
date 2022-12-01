@@ -1,5 +1,6 @@
 package com.toy.mgym.ui.search
 
+import ViewModelFactory
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,16 +8,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.toy.mgym.databinding.FragmentSearchBinding
-import com.toy.mgym.model.FoodInfo
 
 class SearchFragment : Fragment() {
 
     private lateinit var binding: FragmentSearchBinding
-    private val viewModel:SearchViewModel by viewModels()
-
-    private val searchAdapter by lazy {
-        SearchAdapter()
-    }
+    private val viewModel: SearchViewModel by viewModels { ViewModelFactory(requireContext()) }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -30,7 +26,11 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.rvSearchFood.adapter = searchAdapter
+        val searchFoodAdapter = SearchFoodAdapter()
+        binding.rvSearchFood.adapter = searchFoodAdapter
+        viewModel.foods.observe(viewLifecycleOwner) {
+            searchFoodAdapter.submitList(it)
+        }
 
 
     }

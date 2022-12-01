@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
+    <!--    Text Styles    -->
     <style name="Title1">
         <item name="android:fontFamily">@font/font_jua</item>
         <item name="android:textStyle">bold</item>

@@ -3,23 +3,21 @@ package com.toy.mgym.ui.search
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewModelScope
 import com.toy.mgym.model.FoodInfo
-import com.toy.mgym.repository.FoodDataRepository
-import kotlinx.coroutines.launch
+import com.toy.mgym.repository.FoodRepository
 
-class SearchViewModel(private val foodDataRepository: FoodDataRepository) : ViewModel() {
+class SearchViewModel(private val foodRepository: FoodRepository) : ViewModel() {
 
-    private val _foods = MutableLiveData<List<FoodInfo?>?>()
-    private val foods: LiveData<List<FoodInfo?>?> = _foods
+    private val _foods = MutableLiveData<List<FoodInfo>>()
+    val foods: LiveData<List<FoodInfo>> = _foods
 
     init {
         loadSearch()
     }
 
     private fun loadSearch() {
-        viewModelScope.launch {
-            val foodData = foodDataRepository.getFoodData()
+        val foodData = foodRepository.getFoodData()
+        foodData?.let { foodData ->
             _foods.value = foodData.items
         }
     }
