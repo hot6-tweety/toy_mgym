@@ -2,20 +2,26 @@
     <!-- Base application theme. -->
     <style name="Theme.Mgym" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/blue_darkest</item>
-        <item name="colorPrimaryVariant">@color/blue_base</item>
-        <item name="colorOnPrimary">@color/sky_white</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue_01</item>
+        <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/primary_dark</item>
-        <item name="colorSecondaryVariant">@color/primary_base</item>
-        <item name="colorOnSecondary">@color/ink_darkest</item>
+        <item name="colorSecondary">@color/purple</item>
+        <item name="colorSecondaryVariant">@color/purple_02</item>
+        <item name="colorOnSecondary">@color/dark</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/sky_white</item>
+        <item name="android:statusBarColor" tools:targetApi="l" >#00000000</item>
+        <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
         <item name="appBarLayoutStyle">@style/AppbarStyle</item>
     </style>
 
     <style name="AppbarStyle" parent="Widget.Design.AppBarLayout">
-        <item name="android:background">@color/sky_white</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Theme.Mgym.Splash">
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:windowBackground">@color/blue</item>
     </style>
 </resources>

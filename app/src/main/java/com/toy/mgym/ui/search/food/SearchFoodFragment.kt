@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.toy.mgym.databinding.FragmentSearchFoodBinding
+import timber.log.Timber
 
 class SearchFoodFragment: Fragment() {
 
@@ -30,11 +31,13 @@ class SearchFoodFragment: Fragment() {
         setFoodList()
     }
 
+
     private fun setFoodList() {
         val searchFoodAdapter = SearchFoodAdapter(viewModel)
         binding.rvSearchFood.adapter = searchFoodAdapter
         viewModel.foods.observe(viewLifecycleOwner) {
             searchFoodAdapter.submitList(it)
+            Timber.d("${it}") // null... ?
         }
     }
 }

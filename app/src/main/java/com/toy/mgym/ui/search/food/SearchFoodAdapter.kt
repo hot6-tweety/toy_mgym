@@ -1,5 +1,6 @@
 package com.toy.mgym.ui.search.food
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -19,6 +20,7 @@ class SearchFoodAdapter(private val viewModel: SearchFoodViewModel) :
     }
 
     override fun onBindViewHolder(holder: SearchFoodViewHolder, position: Int) {
+
         holder.bind(getItem(position))
     }
 
@@ -36,7 +38,7 @@ class SearchFoodAdapter(private val viewModel: SearchFoodViewModel) :
 class FoodDiffCallback : DiffUtil.ItemCallback<FoodInfo>() {
 
     override fun areItemsTheSame(oldItem: FoodInfo, newItem: FoodInfo): Boolean {
-        return oldItem === newItem
+        return oldItem.name == newItem.name
     }
 
     override fun areContentsTheSame(oldItem: FoodInfo, newItem: FoodInfo): Boolean {

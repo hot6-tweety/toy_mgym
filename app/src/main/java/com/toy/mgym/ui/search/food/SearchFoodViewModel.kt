@@ -1,5 +1,6 @@
 package com.toy.mgym.ui.search.food
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -7,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.toy.mgym.model.FoodInfo
 import com.toy.mgym.repository.FoodRepository
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 class SearchFoodViewModel(
     private val foodRepository: FoodRepository
@@ -21,7 +23,7 @@ class SearchFoodViewModel(
 
     private fun loadFood(){
         viewModelScope.launch {
-            val foods = foodRepository.getFoodData().items
+            val foods = foodRepository.getFoodData().foodData.items
             _foods.value = foods
         }
     }

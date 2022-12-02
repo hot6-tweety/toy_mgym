@@ -3,6 +3,12 @@ package com.toy.mgym.model
 
 import com.google.gson.annotations.SerializedName
 
+data class FoodBody(
+    @SerializedName("body")
+    val foodData: FoodData
+)
+
+
 data class FoodData(
     @SerializedName("items")
     val items: List<FoodInfo>,

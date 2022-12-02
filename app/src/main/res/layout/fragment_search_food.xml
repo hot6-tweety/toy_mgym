@@ -8,64 +8,60 @@
 
     </data>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".ui.search.food.SearchFoodFragment">
+        android:layout_height="match_parent">
 
-        <com.google.android.material.appbar.AppBarLayout
-            android:id="@+id/search_food_appbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_search_food"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            app:title="식품검색"
+            app:contentInsetStartWithNavigation="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:navigationIcon="@drawable/ic_chevron_left" />
 
-            <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_field_search_food"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/food_name"
+            app:counterEnabled="true"
+            app:counterMaxLength="12"
+            app:endIconMode="clear_text"
+            app:helperText="한글만 입력 가능합니다."
+            app:helperTextEnabled="true"
+            android:paddingTop="8dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_search_food"
+            app:startIconDrawable="@drawable/ic_search"
+            app:startIconTint="@color/blue_darkest">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_food_search"
                 android:layout_width="match_parent"
+                android:layout_height="45dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_search_food"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                app:contentInsetStart="0dp"
-                app:layout_scrollFlags="scroll|enterAlways">
+                android:nestedScrollingEnabled="true"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_field_search_food"
+                tools:listitem="@layout/item_food" />
 
-                <ImageView
-                    android:id="@+id/toolbar_back_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="12dp"
-                    android:background="@color/sky_white"
-                    android:contentDescription="검색"
-                    android:src="@drawable/ic_chevron_left" />
-            </androidx.appcompat.widget.Toolbar>
-
-        </com.google.android.material.appbar.AppBarLayout>
-
-        <androidx.core.widget.NestedScrollView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rv_search_food"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:nestedScrollingEnabled="false"
-                    android:orientation="vertical"
-                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    tools:listitem="@layout/item_food" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.core.widget.NestedScrollView>
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

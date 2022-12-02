@@ -10,6 +10,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.toy.mgym.databinding.ActivityMainBinding
+import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,5 +23,6 @@ class MainActivity : AppCompatActivity() {
         navController?.let{
             bottomNavigationView.setupWithNavController(it)
         }
+
     }
 }

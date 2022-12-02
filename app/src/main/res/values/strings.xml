@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">mgym</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_search">Search</string>
+    <string name="app_name">맛잇짐</string>
+    <string name="title_home">홈</string>
+    <string name="title_dashboard">목록</string>
+    <string name="title_search">검색</string>
+    <string name="food_name">식품이름</string>
 </resources>

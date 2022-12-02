@@ -26,12 +26,13 @@ class SearchFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val openButton = binding.btnActionToFood
-        openButton.setOnClickListener { openSearchFood() }
+        openSearchFood()
 
     }
 
     private fun openSearchFood() {
-        findNavController().navigate(R.id.action_search_to_search_food)
+        binding.btnActionToFood.setOnClickListener {
+            findNavController().navigate(R.id.action_search_to_search_food)
+        }
     }
 }
