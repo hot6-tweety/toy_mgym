@@ -7,7 +7,8 @@
     <color name="grey_02">#6c7072</color>
     <color name="grey_03">#72777a</color>
     <color name="grey_04">#979c9e</color>
-    <color name="white_04">#cdcfd0</color>
+    <color name="grey_05">#cdcfd0</color>
+    <color name="grey_blue">#f2f4f6</color>
     <color name="white_03">#e3e5e5</color>
     <color name="white_02">#f2f4f5</color>
     <color name="white_01">#f7f9fa</color>
@@ -32,8 +33,8 @@
     <color name="blue_02">#6ec2fb</color>
     <color name="blue_03">#9bdcfd</color>
     <color name="blue_04">#c9f0ff</color>
-    <color name="yellow">#a05e03</color>
-    <color name="yellow_01">#ffb323</color>
+    <color name="orange">#EF6C00</color>
+    <color name="yellow">#ffb323</color>
     <color name="yellow_02">#ffc462</color>
     <color name="yellow_03">#ffd188</color>
     <color name="yellow_04">#ffefd7</color>

@@ -10,10 +10,10 @@
         <item name="colorSecondaryVariant">@color/purple_02</item>
         <item name="colorOnSecondary">@color/dark</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l" >#00000000</item>
-        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
         <!-- Customize your theme here. -->
-        <item name="appBarLayoutStyle">@style/AppbarStyle</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="AppbarStyle" parent="Widget.Design.AppBarLayout">
@@ -21,7 +21,6 @@
     </style>
 
     <style name="Theme.Mgym.Splash">
-        <item name="android:statusBarColor">@color/blue</item>
-        <item name="android:windowBackground">@color/blue</item>
+
     </style>
 </resources>

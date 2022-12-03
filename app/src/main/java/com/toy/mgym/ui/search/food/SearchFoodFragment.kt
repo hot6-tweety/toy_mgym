@@ -7,10 +7,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
+import com.toy.mgym.R
 import com.toy.mgym.databinding.FragmentSearchFoodBinding
 import timber.log.Timber
 
-class SearchFoodFragment: Fragment() {
+class SearchFoodFragment : Fragment() {
 
     private lateinit var binding: FragmentSearchFoodBinding
     private val viewModel: SearchFoodViewModel by viewModels { ViewModelFactory(requireContext()) }
@@ -29,15 +31,19 @@ class SearchFoodFragment: Fragment() {
 
         binding.lifecycleOwner = viewLifecycleOwner
         setFoodList()
+        backSearchFood()
     }
-
 
     private fun setFoodList() {
         val searchFoodAdapter = SearchFoodAdapter(viewModel)
         binding.rvSearchFood.adapter = searchFoodAdapter
         viewModel.foods.observe(viewLifecycleOwner) {
             searchFoodAdapter.submitList(it)
-            Timber.d("${it}") // null... ?
+        }
+    }
+    private fun backSearchFood() {
+        binding.toolbarSearchFood.setOnClickListener {
+            findNavController().navigateUp()
         }
     }
 }

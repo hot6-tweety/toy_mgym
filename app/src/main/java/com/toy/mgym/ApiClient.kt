@@ -21,8 +21,8 @@ interface ApiClient {
         @Query("desc_kor") foodName: String? = "김",
         @Query("numOfRows") searchCount: Int? = 1
     ): FoodBody
-
-
+    // 안드로이드 Pie (9버전) 이후부터 https 를 사용, SSL 문제 발생, 임시로 http GET 요청하게끔 변경
+    // TODO 트래픽량이 10000개 제한되어 있어서 SVC 파일을 DB에 저장하는 방식으로 변경해야함
 
     companion object {
 
